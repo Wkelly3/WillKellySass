@@ -1,0 +1,22 @@
+.nav{
+     margin-right: auto;
+     .menu {
+          @include listreset;
+          display: flex;
+
+          &-item {
+               margin-right: 0.5em;
+               &-link{
+                    color: $color__blue;
+                    text-decoration: none;
+                    padding: 0.6em 1em;
+                    display: block;
+                    font-family: $font__heading;
+                    &:hover {
+                         background-color: aquamarine;
+                    }
+               }
+          }
+     }
+
+}
