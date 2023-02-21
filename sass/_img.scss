@@ -5,3 +5,21 @@
      float: left;
      margin-right: 5em;
 }
+input {
+     transform: scale(1.5);
+     margin: 10px 5px;
+   }
+   
+   .img1 {
+     width: 600px;
+     height: 500px;
+     transition: 0s;
+   }
+   
+   input:checked + br + .img1 {
+     width: 500px;
+     height: 500px;
+     object-fit: cover;
+     object-position: left-top;
+     transition: width 2s, height 4s;
+   }
